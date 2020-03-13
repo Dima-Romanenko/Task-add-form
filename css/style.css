@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #2ec194;
+}
+.container {
+  width: 100%;
+  min-width: 1170px;
+}
+.card {
+  margin: 50px auto;
+  padding: 15px;
+  width: 900px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  left: 5%;
+  width: 90%;
+  height: 30px;
+  background: rgba(15, 15, 15, 0.5);
+  border-radius: 50%;
+  filter: blur(10px);
+}
+.card-title {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(105, 104, 104);
+}
+.task-form {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.task-title,
+.filter-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(13, 165, 13);
+}
+.task,
+.filter {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 1px solid;
+  border-radius: 15px;
+  outline: none;
+  padding: 15px 20px;
+  color: rgb(105, 104, 104);
+}
+.success {
+  background-image: url("/images/check-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 98%;
+}
+.task:hover,
+.filter:hover {
+  border-color: rgb(13, 165, 13);
+}
+.footer {
+  margin: 100px auto 30px;
+  padding: 15px;
+}
+
+/* btn  */
+.btn {
+  width: 200px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: 1px solid;
+  border-radius: 15px;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+  transition: 0.2s;
+  color: rgb(105, 104, 104);
+}
+
+.new-task:hover {
+  color: rgb(13, 165, 13);
+}
+.clear-tasks:hover {
+  color: rgb(212, 13, 13);
+}
+
+/* appendChild */
+.collection {
+  width: 100%;
+  padding: 0 15px 10px;
+  position: relative;
+}
+
+.collection-item {
+  width: 100%;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.delete-item {
+  position: absolute;
+  right: 10px;
+  border: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(212, 13, 13);
+}

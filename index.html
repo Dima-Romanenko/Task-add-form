@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-title">Список задач</div>
+        <form id="task-form" class="task-form">
+          <div class="input-field">
+            <label for="task" class="task-title">Новая задача</label>
+            <input
+              type="text"
+              name="task"
+              id="task"
+              autocomplete="off"
+              class="task"
+            />
+          </div>
+          <button class="btn new-task">Добавить задачу</button>
+        </form>
+        <div class="footer">
+          <label for="filter" class="filter-title">Фильтр задач</label>
+          <input type="text" name="filter" id="filter" class="filter" />
+          <ul class="collection"></ul>
+          <button class="btn black clear-tasks">Удалить все</button>
+        </div>
+      </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
